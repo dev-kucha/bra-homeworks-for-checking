@@ -1,0 +1,200 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&family=Playfair+Display&display=swap');
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/Proxima_Nova_Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Futura PT";
+    src: url("../fonts/ofont-ru_Futura_PT.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Georgia;
+    src: url("../fonts/GEORGIA.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Georgia i";
+    src: url("../fonts/GEORGIAI.TTF") format("truetype");
+}
+
+.page {
+    background-color: #464f54;
+}
+
+.header {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: fixed;
+    top: 48px;
+    right: 0px;
+    min-width: 50%;
+    max-width: 75%;
+}
+
+.header__first-line {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 187px;
+    -webkit-box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+            box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+    background-color: #181818;
+    padding: 44px 0 0 60px;
+}
+
+.header__prequel {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #767676;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    line-height: normal;
+}
+
+.header__title {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #fefefe;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.header__line {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 0.1;
+}
+
+.header__nav-line {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-left: 64px;
+    height: 76px;
+    -webkit-box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+            box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+    background-color: #fbc02d;
+    padding: 22px;
+}
+
+/* material icons start */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;  /* Preferred icon size */
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    margin-left: 20px;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    -webkit-font-feature-settings: 'liga';
+            font-feature-settings: 'liga';
+}
+
+.material-icons--active {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons:hover {
+    color: rgba(255, 255, 255, 1);
+}
+/* material icons end */
+
+.article {
+    width: 1060px;
+    height: 1195px;
+    margin: 150px auto 0;
+    padding-top: 200px;
+    -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.22);
+    background-color: #ffffff;
+}
+
+.wrapper {
+    width: 806px;
+    margin: auto;
+}
+
+.article__tagline {
+    color: #b4b4b4;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+    margin-bottom: 16px;
+}
+
+.article__title {
+    color: #2a2a2a;
+    font-family: "Futura PT", sans-serif;
+    font-size: 78px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 5.28px;
+    line-height: normal;
+}
+
+.article__subtitle {
+    color: #8f8f8f;
+    font-family: "Georgia i";
+    font-size: 30px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.article__content {
+    color: #000000;
+    font-family: Georgia;
+    font-size: 27px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 40.38px;
+}
+
+.article__content--em {
+    font-style: italic;
+}
