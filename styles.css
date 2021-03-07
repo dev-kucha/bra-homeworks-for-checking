@@ -6,6 +6,8 @@
 @import './common.blocks/main/get/styles.css';
 @import './common.blocks/main/about-us/styles.css';
 @import './common.blocks/blog-page/css/stiles.css'; /* Add Blog page styles */
+@import './common.blocks/contact-page/css/stiles.css'; /* Add Contact page styles */
+@import './common.blocks/footer/footer.css'; /* Add Footer styles */
 
 * {
     padding: 0;

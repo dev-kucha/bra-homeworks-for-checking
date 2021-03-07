@@ -1,0 +1,27 @@
+.footer {
+    height: 90px;
+    background-color: #262626;
+    color: #b9b9b9;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer__inner {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.footer__logo {
+    color: #b9b9b9;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 25px;
+}
+
+.made--rad {
+    color: #ff2b58;
+    font-weight: 700;
+}
