@@ -34,7 +34,7 @@
     </header>
 
     <main>
-        <!--       <div class="get">
+        <div class="get">
             <div class="wrapper">
                 <div class="inner get__inner">
                     <div class="desc get__desc">
@@ -74,10 +74,10 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- Blog page -->
-        <!--         <div class="blog" id="blog">
+        <div class="blog" id="blog">
             <div class="page__wrapper">
                 <div class="page__title">
                     Blog
@@ -128,11 +128,11 @@
                     </div>
                 </a>
             </div>
-        </div> -->
+        </div>
         <!-- end Blog page -->
         <!-- Contact page -->
         <div class="contact" id="contact">
-            <div class="page__wrapper">
+            <div class="contact__wrapper">
                 <div class="contact__title">
                     Contact
                 </div>
@@ -141,11 +141,24 @@
                     you'd like to discuss, contact with me!
                 </div>
                 <div class="contact__inner">
-                    <form class="form-block">
+                    <form class="form contact__form" action="#">
+                        <div class="form__controls">
 
+                            <label class="form__label" for="name"></label>
+                            <input class="form__input form__input" type="name" id="name" placeholder="Auskteez Tran">
+
+                            <label class="form__label" for="email"></label>
+                            <input class="form__input" type="email" name="email" id="email" placeholder="Your email...">
+
+                            <label class="form__label" for="phone"></label>
+                            <input class="form__input" type="tel" name="phone" id="phone"
+                                placeholder="Your phone number...">
+
+                            <textarea class="form__texarea" placeholder="Your messge..."></textarea>
+                        </div>
                     </form>
                     <div class="address-block">
-                        <dl>
+                        <dl class="address-block__group">
                             <dt class="address-block__dt">ADDRESS</dt>
                             <dd class="address-block__dd">123 City name, Street, City, Country</dd>
                             <dt class="address-block__dt">EMAIL</dt>
@@ -167,9 +180,11 @@
                 <div class="copyright">
                     © 2015 Company. All right reserved.
                 </div>
-                <div class="logo footer__logo">
-                    Cahee
-                </div>
+                <a href="#top">
+                    <div class="logo footer__logo">
+                        Cahee
+                    </div>
+                </a>
                 <div class="made">Made with <span class="made--rad">love</span> by Auskteez</div>
             </div>
         </div>
