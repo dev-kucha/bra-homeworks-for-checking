@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import './common.blocks/wrapper/styles.css';
 @import './common.blocks/inner/styles.css';
 @import './common.blocks/header/styles.css';
@@ -12,7 +19,10 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
     transition: all .1s ease-in;
     scroll-behavior: smooth;
 }
