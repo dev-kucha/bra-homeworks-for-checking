@@ -1,0 +1,6 @@
+.inner {
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    text-align: left;
+}

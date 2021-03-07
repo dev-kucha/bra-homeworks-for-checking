@@ -1,0 +1,19 @@
+@import './common.blocks/wrapper/styles.css';
+@import './common.blocks/inner/styles.css';
+@import './common.blocks/header/styles.css';
+@import './common.blocks/header/logo/styles.css';
+@import './common.blocks/header/nav/styles.css';
+@import './common.blocks/main/get/styles.css';
+@import './common.blocks/main/about-us/styles.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}

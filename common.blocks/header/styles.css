@@ -1,0 +1,18 @@
+.header {
+    height: 150px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header__inner {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+}

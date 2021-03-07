@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.logo {
+    color: #262626;
+    font-family: Pacifico;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+}

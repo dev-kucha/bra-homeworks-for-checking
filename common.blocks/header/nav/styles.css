@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+
+.nav__item {
+    display: inline-block;
+    list-style-type: none;
+    color: #262626;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 38px;
+    padding-top: 10px;
+}
+
+.nav__item--active {
+    border-top: #ff6033 3px solid;
+}
+
+.nav__item:hover {
+    border-top: #ff6033 3px solid;
+} 
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
