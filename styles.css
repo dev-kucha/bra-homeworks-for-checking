@@ -5,6 +5,7 @@
 @import './common.blocks/header/nav/styles.css';
 @import './common.blocks/main/get/styles.css';
 @import './common.blocks/main/about-us/styles.css';
+@import './common.blocks/blog-page/css/stiles.css'; /* Add Blog page styles */
 
 * {
     padding: 0;

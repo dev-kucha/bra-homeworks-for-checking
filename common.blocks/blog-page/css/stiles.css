@@ -1,0 +1,188 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+.blog {
+    font-family: 'Raleway', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #b07cf7;
+    color: #ffffff;
+    height: 98vh;
+    padding-top: 170px;
+}
+
+.page__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* position: relative; */
+    width: 100%;
+/*     height: 100vh; */
+    /* align-content: center; */
+}
+
+.page__title {
+    /* position: relative; */
+    width: 568px;
+    font-size: 90px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page__subtitle {
+    /* position: relative; */
+    max-width: 568px;
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.posts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.post {
+    min-width: 370px;
+    height: 310px;
+    margin: 0 15px 0 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 23px;
+    position: relative;
+    transition: all 0.2s ease-in;
+}
+
+.post:hover {
+    top: -4px;
+    left: 4px;
+}
+
+.post-1 {
+    background-image: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(transparent),
+        to(black)), url('../img/img-post-1.webp');
+    background-image: -o-linear-gradient(
+        transparent,
+        black), url('../img/img-post-1.webp');
+    background-image: linear-gradient(
+        transparent,
+        black), url('../img/img-post-1.webp');
+}
+
+.post-2 {
+    background-image: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(transparent),
+        to(black)), url('../img/img-post-2.webp');
+    background-image: -o-linear-gradient(
+        transparent,
+        black), url('../img/img-post-2.webp');
+    background-image: linear-gradient(
+        transparent,
+        black), url('../img/img-post-2.webp');
+}
+
+.post-3 {
+    background-image: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(transparent),
+        to(black)), url('../img/img-post-3.webp');
+    background-image: -o-linear-gradient(
+        transparent,
+        black), url('../img/img-post-3.webp');
+    background-image: linear-gradient(
+        transparent,
+        black), url('../img/img-post-3.webp');
+}
+
+.post__data {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(38, 38, 38, 0.5);
+    color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    text-align: center;
+}
+
+.post__data-day {
+    font-size: 32px;
+    font-weight: 700;
+    -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+            transform: translateY(-4px);
+}
+
+.post__data-month {
+    font-size: 21px;
+    font-weight: 400;
+    -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+            transform: translateY(-4px);
+}
+
+.post__title {
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 62px;
+}
+
+.post__label {
+
+    font-size: 13px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 23px
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #f72b3b;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    padding: 16px 43px;
+}
