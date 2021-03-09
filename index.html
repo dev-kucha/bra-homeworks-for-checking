@@ -11,11 +11,42 @@
 
 <body class="page">
     <div class="popup">
+        <div class="main">
+            <ul class="popup-menu">
+                <li class="popup-menu__item popup-menu__item--active">Sign in</li>
+                <li class="popup-menu__item">Join us</li>
+            </ul>
+            <form class="login-form" action="#" method="get">
+                <label class="login-form__label" for="username">Username
+                    <input class="login-form__input" type="text" name="username" id="">
 
-    </div>
-    <div class="shadow">
+                </label>
 
+                <label class="login-form__label" for="password">Password
+                    <input class="login-form__input" type="password" name="password" id="">
+
+                </label>
+
+
+                <label class="login-form__label--checkbox">
+                    <input class="login-form__input--checkbox" type="checkbox" checked>
+                    <span class="checkbox">
+
+                    </span>
+                    Keep me signed in</label>
+
+                <button class="login-form__button" type="submit">Sign in</button>
+            </form>
+            <ul class="popup-addlinks">
+                <li class="popup-addlinks__item">Forgot password</li>
+                <li class="popup-addlinks__item">Create an account</li>
+            </ul>
+        </div>
+        <div class="shadow">
+            <img src="./img/shadow.png" alt="shadow">
+        </div>
     </div>
+
 </body>
 
 </html>
