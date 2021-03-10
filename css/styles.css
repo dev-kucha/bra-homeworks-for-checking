@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
-
-.page {
-
-}
-
 .popup {
     height: 500px;
+    min-width: 470px;
 }
 
 .main {
@@ -17,15 +13,7 @@ margin: 100px auto 0;
     left: 0;
     right: 0;
     z-index: 1;
-/*     
-    z-index: 1; */
-    /* top: 150px;
-    left: 50%; */
-    /* top: 0; bottom: 0; */
-     /* left: 0; right: 0; */
-    /* margin: 0; */
-        /* margin: 150px auto 0; */
-    width: 400px;
+                        width: 400px;
     height: 496px;
     box-shadow: 0 0 20px rgba(2, 41, 120, 0.1);
     /* background-color: #166a6a; */
@@ -43,19 +31,11 @@ padding: 50px 70px;
     list-style-type: none;
     margin-bottom: 50px;
     width: 100%;
-
 }
 
 .popup-menu__item {
     display: inline-block;
-    color: #fbf6e4;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    text-align: left;
+    box-sizing: border-box;
     padding-bottom: 3px;
     margin-right: 26px;
 }
@@ -67,6 +47,14 @@ padding: 50px 70px;
 .popup-menu__item:hover {
     border-bottom: 2px #e66a64 solid;
     }
+
+.popup-menu__link {
+    color: #fbf6e4;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
 
 .login-form {
     display: block;
@@ -81,10 +69,7 @@ padding: 50px 70px;
     font-size: 16px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
     text-align: left;
-    
 }
 
 .login-form__input {
@@ -93,11 +78,28 @@ padding: 50px 70px;
     height: 42px;
     width: 100%;
     border: 2px solid rgba(191, 185, 204, 0.54);
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: #fbf6e4;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 10px;
     margin-top: 10px;
     margin-bottom: 16px;
 }
-.login-form__label--checkbox {
+
+.login-form__input:active {
+    border: 2px solid rgba(230, 106, 100, 1);
+outline: none;
+}
+
+.login-form__input:focus {
+    border: 2px solid rgba(230, 106, 100, 1);
+outline: none;
+}
+
+.login-form__label-checkbox {
     display: block;
     padding-left: 26px;
     color: #fbf6e4;
@@ -111,23 +113,53 @@ padding: 50px 70px;
     margin-bottom: 41px;
 }
 
-.login-form__input--checkbox {
+.login-form__input-checkbox {
     position: absolute ;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
 }
 
-.checkbox {
+.login-form__alt-checkbox {
     position: absolute;
     width: 16px;
-height: 16px;
-margin-left: -26px;
+    height: 16px;
+    margin-left: -26px;
     background-color: #23ae92;
+
+}
+
+/* Checked */
+.login-form__input-checkbox:checked + .login-form__alt-checkbox{
     background-image: url(../img/check.svg);
     background-repeat: no-repeat;
     background-position: center;
+
 }
+
+/* Focused */
+.login-form__input-checkbox:focus + .login-form__alt-checkbox{
+    box-shadow: 0px 0px 0 2px #e66a64;
+}
+
+/* Disabled */
+.login-form__input-checkbox:disabled + .login-form__alt-checkbox {
+    background-color: #668a83;
+    opacity: 0.5;
+}
+
+.login-form__input-checkbox:disabled + .login-form__alt-checkbox + .login-form__text {
+    opacity: 0.54;
+}
+
+.login-form__input-checkbox:checked:disabled + .login-form__alt-checkbox{
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(191, 185, 204, 0.54);
+}
+
 
 .login-form__button {
     box-sizing: border-box;
@@ -147,6 +179,28 @@ margin-left: -26px;
     margin-bottom: 33px;
 }
 
+.login-form__button:hover {
+    border: 2px solid rgba(230,106,100, 1);
+    outline: none;
+} 
+
+.login-form__button:active {
+    border: 2px solid rgba(230,106,100, 1);
+    outline: none;
+} 
+
+.login-form__button:focus {
+    border: 2px solid rgba(230,106,100, 1);
+    outline: none;
+} 
+
+/* Focused */
+/* 
+.login-form__button:focus {
+    border: none;
+    box-shadow: 0px 0px 0 2px #e66a64;  
+} */
+
 .popup-addlinks {
     display: flex;
     justify-content: space-between;
@@ -157,18 +211,23 @@ margin-left: -26px;
 }
 
 .popup-addlinks__item {
-    
     color: #b9b9cc;
     display: inline-block;
     font-family: 'Quicksand', sans-serif;
     font-size: 13px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
     text-align: left;
+    text-decoration: none;
     border-bottom: rgba(150, 193, 218, 0.15) 1px solid;
     padding-bottom: 3px;
+}
+
+.popup-addlinks__item:hover {
+    color: #fbf6e4;
+    
+    border-bottom: rgba(251, 246, 228, 0.8) 1px solid;
+    
 }
 
 
