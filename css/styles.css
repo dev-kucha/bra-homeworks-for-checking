@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 .popup {
@@ -6,22 +13,20 @@
 }
 
 .main {
-    
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     position: relative;
-margin: 100px auto 0;
+    margin: 100px auto 0;
     left: 0;
     right: 0;
     z-index: 1;
-                        width: 400px;
+    width: 400px;
     height: 496px;
-    box-shadow: 0 0 20px rgba(2, 41, 120, 0.1);
-    /* background-color: #166a6a; */
-    /* background-image: url(../img/background.png), url(../img/shadow.png), linear-gradient(32deg, #3023ae 0%, #c86dd7 100%); */
+    -webkit-box-shadow: 0 0 20px rgba(2, 41, 120, 0.1);
+            box-shadow: 0 0 20px rgba(2, 41, 120, 0.1);
     background-image: url(../img/background2.png);
     background-repeat: no-repeat;
-/* 08-03-2021 */
-padding: 50px 70px;
+    padding: 50px 70px;
 }
 
 .popup-menu {
@@ -35,7 +40,8 @@ padding: 50px 70px;
 
 .popup-menu__item {
     display: inline-block;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-bottom: 3px;
     margin-right: 26px;
 }
@@ -74,7 +80,8 @@ padding: 50px 70px;
 
 .login-form__input {
     display: block;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     height: 42px;
     width: 100%;
     border: 2px solid rgba(191, 185, 204, 0.54);
@@ -91,12 +98,12 @@ padding: 50px 70px;
 
 .login-form__input:active {
     border: 2px solid rgba(230, 106, 100, 1);
-outline: none;
+    outline: none;
 }
 
 .login-form__input:focus {
     border: 2px solid rgba(230, 106, 100, 1);
-outline: none;
+    outline: none;
 }
 
 .login-form__label-checkbox {
@@ -107,8 +114,6 @@ outline: none;
     font-size: 13px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
     text-align: left;
     margin-bottom: 41px;
 }
@@ -127,23 +132,20 @@ outline: none;
     height: 16px;
     margin-left: -26px;
     background-color: #23ae92;
-
 }
 
-/* Checked */
 .login-form__input-checkbox:checked + .login-form__alt-checkbox{
     background-image: url(../img/check.svg);
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
-/* Focused */
 .login-form__input-checkbox:focus + .login-form__alt-checkbox{
-    box-shadow: 0px 0px 0 2px #e66a64;
+    -webkit-box-shadow: 0px 0px 0 2px #e66a64;
+            box-shadow: 0px 0px 0 2px #e66a64;
 }
 
-/* Disabled */
+/* Disabled checkbox*/
 .login-form__input-checkbox:disabled + .login-form__alt-checkbox {
     background-color: #668a83;
     opacity: 0.5;
@@ -159,10 +161,11 @@ outline: none;
     background-position: center;
     background-color: rgba(191, 185, 204, 0.54);
 }
-
+/* Disabled checkbox */
 
 .login-form__button {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: block;
     height: 42px;
     width: 100%;
@@ -172,8 +175,6 @@ outline: none;
     font-size: 18px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
     text-align: center;
     border: none;
     margin-bottom: 33px;
@@ -194,16 +195,13 @@ outline: none;
     outline: none;
 } 
 
-/* Focused */
-/* 
-.login-form__button:focus {
-    border: none;
-    box-shadow: 0px 0px 0 2px #e66a64;  
-} */
-
 .popup-addlinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -225,14 +223,12 @@ outline: none;
 
 .popup-addlinks__item:hover {
     color: #fbf6e4;
-    
     border-bottom: rgba(251, 246, 228, 0.8) 1px solid;
-    
 }
 
-
 .shadow {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     position: relative;
     width: 466px;
     height: 196px;
@@ -240,4 +236,3 @@ outline: none;
     opacity: 0.91;
     top: -140px;
 }
-
