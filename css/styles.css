@@ -62,7 +62,6 @@
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 4.8px;
-    line-height: normal;
 }
 
 .header__title {
@@ -72,9 +71,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     font-weight: 400;
-    letter-spacing: normal;
     text-align: left;
-    line-height: normal;
     margin-bottom: 8px;
 }
 
@@ -101,13 +98,11 @@
 /* material icons start */
 .material-icons {
     font-family: 'Material Icons';
-    font-weight: normal;
     font-size: 36px;  /* Preferred icon size */
     color: rgba(255, 255, 255, 0.5);
     display: inline-block;
     line-height: 1;
     text-transform: none;
-    letter-spacing: normal;
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
@@ -152,8 +147,6 @@
     font-family: "Proxima Nova", sans-serif;
     font-size: 20px;
     font-weight: 400;
-    font-style: normal;
-    line-height: normal;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 4.72px;
@@ -168,7 +161,6 @@
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 5.28px;
-    line-height: normal;
 }
 
 .article__subtitle {
@@ -176,8 +168,6 @@
     font-family: "Georgia i";
     font-size: 30px;
     font-style: italic;
-    letter-spacing: normal;
-    line-height: normal;
     margin-bottom: 40px;
 }
 
@@ -186,7 +176,6 @@
     font-family: Georgia;
     font-size: 27px;
     font-weight: 400;
-    letter-spacing: normal;
     line-height: 40.38px;
 }
 
