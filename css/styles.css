@@ -74,7 +74,6 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    font-style: normal;
     text-align: left;
 }
 
@@ -90,7 +89,6 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    font-style: normal;
     padding-left: 10px;
     margin-top: 10px;
     margin-bottom: 16px;
@@ -113,13 +111,12 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 13px;
     font-weight: 700;
-    font-style: normal;
     text-align: left;
     margin-bottom: 41px;
 }
 
 .login-form__input-checkbox {
-    position: absolute ;
+    position: absolute;
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -174,7 +171,6 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    font-style: normal;
     text-align: center;
     border: none;
     margin-bottom: 33px;
@@ -214,7 +210,6 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 13px;
     font-weight: 400;
-    font-style: normal;
     text-align: left;
     text-decoration: none;
     border-bottom: rgba(150, 193, 218, 0.15) 1px solid;
