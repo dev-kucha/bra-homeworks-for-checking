@@ -31,28 +31,21 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /* position: relative; */
     width: 100%;
-/*     height: 100vh; */
-    /* align-content: center; */
 }
 
 .page__title {
-    /* position: relative; */
     width: 568px;
     font-size: 90px;
     font-weight: 700;
-    font-style: normal;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .page__subtitle {
-    /* position: relative; */
     max-width: 568px;
     font-size: 17px;
     font-weight: 300;
-    font-style: normal;
     text-align: center;
     margin-bottom: 47px;
 }
@@ -182,7 +175,6 @@
     background-color: #f72b3b;
     font-size: 20px;
     font-weight: 300;
-    font-style: normal;
     text-transform: uppercase;
     padding: 16px 43px;
 }
