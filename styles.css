@@ -15,7 +15,9 @@
 @import './common.blocks/blog-page/css/stiles.css'; /* Add Blog page styles */
 @import './common.blocks/contact-page/css/stiles.css'; /* Add Contact page styles */
 @import './common.blocks/footer/footer.css'; /* Add Footer styles */
-@import './common.blocks/our-services/css/styles.css'; /* Add Our Services */
+@import './common.blocks/our-services/css/styles.css'; /* Add Our Services styles */
+@import './common.blocks/gallary/css/styles.css'; /* Add Gallery styles */
+@import './common.blocks/subscribe/css/styles.css'; /* Add Subscribe To Us page */
 
 * {
     padding: 0;

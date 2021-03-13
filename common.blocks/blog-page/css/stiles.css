@@ -162,11 +162,6 @@
     bottom: 23px
 }
 
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-
 .button {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -177,4 +172,10 @@
     font-weight: 300;
     text-transform: uppercase;
     padding: 16px 43px;
+    cursor: pointer;
+}
+
+.button__link {
+    text-decoration: none;
+    color: inherit;
 }
