@@ -68,10 +68,10 @@
     font-size: 50px;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 0;
-    padding-top: 24px;
-    /* border: solid 1px rgb(76, 156, 45); */
+    top: 50%;
+    margin-top: -0.500em;
+    /* padding-top: 24px; */
+ 
 }
 
 .services-title {
