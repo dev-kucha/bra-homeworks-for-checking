@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 .blog {
@@ -69,6 +76,8 @@
             box-sizing: border-box;
     padding: 20px 23px;
     position: relative;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
 
@@ -78,42 +87,42 @@
 }
 
 .post-1 {
+    background-image: -o-linear-gradient(
+        transparent,
+        black), url('../img/img-post-1.webp');
     background-image: -webkit-gradient(
         linear,
         left top, left bottom,
         from(transparent),
         to(black)), url('../img/img-post-1.webp');
-    background-image: -o-linear-gradient(
-        transparent,
-        black), url('../img/img-post-1.webp');
     background-image: linear-gradient(
         transparent,
         black), url('../img/img-post-1.webp');
 }
 
 .post-2 {
+    background-image: -o-linear-gradient(
+        transparent,
+        black), url('../img/img-post-2.webp');
     background-image: -webkit-gradient(
         linear,
         left top, left bottom,
         from(transparent),
         to(black)), url('../img/img-post-2.webp');
-    background-image: -o-linear-gradient(
-        transparent,
-        black), url('../img/img-post-2.webp');
     background-image: linear-gradient(
         transparent,
         black), url('../img/img-post-2.webp');
 }
 
 .post-3 {
+    background-image: -o-linear-gradient(
+        transparent,
+        black), url('../img/img-post-3.webp');
     background-image: -webkit-gradient(
         linear,
         left top, left bottom,
         from(transparent),
         to(black)), url('../img/img-post-3.webp');
-    background-image: -o-linear-gradient(
-        transparent,
-        black), url('../img/img-post-3.webp');
     background-image: linear-gradient(
         transparent,
         black), url('../img/img-post-3.webp');

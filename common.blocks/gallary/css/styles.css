@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .gallary {
     background-color: #FFE92F;
     height: 1600px;
@@ -22,9 +29,12 @@
 }
 
 .gallary-row-1 , .gallary-row-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    /* width: 100%; */
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .gallary-row-1 {
@@ -42,7 +52,9 @@
 }
 
 .pic-1 {
-    flex-grow: 6;
+    -webkit-box-flex: 6;
+        -ms-flex-positive: 6;
+            flex-grow: 6;
     margin-right: 28px;
     background-image: url('../img/pic-1.png');
     background-repeat: no-repeat;
@@ -54,28 +66,42 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 28px;
-    flex-grow: 5;
-
+    -webkit-box-flex: 5;
+        -ms-flex-positive: 5;
+            flex-grow: 5;
 }
 .pic-3 {
     background-image: url('../img/pic-3.png');
     background-repeat: no-repeat;
     background-position: center;
-    flex-grow: 5;
+    -webkit-box-flex: 5;
+        -ms-flex-positive: 5;
+            flex-grow: 5;
 }
 
 .pic-2-3-col {
-    flex-grow: 4;
+    -webkit-box-flex: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .pic-4 {
     background-image: url('../img/pic-4.png');
     background-repeat: no-repeat;
     background-position: center;
-    flex-grow: 5;
+    -webkit-box-flex: 5;
+        -ms-flex-positive: 5;
+            flex-grow: 5;
     margin-right: 28px;
 }
 
@@ -83,14 +109,14 @@
     background-image: url('../img/pic-5.png');
     background-repeat: no-repeat;
     background-position: center;
-    flex-grow: 5;
+    -webkit-box-flex: 5;
+        -ms-flex-positive: 5;
+            flex-grow: 5;
 }
 
 .button__link--gray {
     display: block;
-/*     width: 100%; */
     height: 100%;
-    /* border: white 1px dotted; */
     color: #ffffff;
 }
 

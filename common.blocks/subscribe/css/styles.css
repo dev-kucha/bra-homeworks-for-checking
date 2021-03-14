@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .subscribe {
     height: 573px;
     padding-top: 145px;
@@ -39,4 +46,5 @@
     font-size: 20px;
     border: none;
     color: #FFFFFF;
+    padding: 14px 20px;
 }
