@@ -13,21 +13,20 @@
     background-image: url(../img/tomato.png);
     background-repeat: no-repeat;
     background-position: 75% 50%;
-    padding-top: 290px;
+/*     padding-top: 290px; */
 }
 
 .our-services__inner {
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     /* border: solid 1px rgb(76, 156, 45); */
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+
+    height: 100%;
 }
 
 .services-items {
@@ -92,4 +91,83 @@
     font-family: Raleway;
     font-size: 90px;
     font-weight: 700;
+}
+
+@media screen and (max-width:1200px) {
+    .our-services {
+        height: 70vh;
+    }
+    .services-title {
+        font-size: 60px;
+    }
+    
+}
+    
+@media screen and (max-width:1024px) {
+    .our-services {
+        background-image: linear-gradient(
+            rgba(112,191,255, 0.8), transparent), url(../img/tomato.png);
+    }
+
+    .our-services__inner {
+        flex-flow: column-reverse;
+    }
+    .services-title {
+        font-size: 40px;
+    }
+    .services-item__pic::before {
+        font-size: 40px;
+    }
+    .services-item {
+        height: 80px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .services-item__pic {
+        width: 80px;
+        height: 100%;
+        margin: 0;
+    }
+}
+    
+@media screen and (max-width:768px) {
+    .our-services {
+        height: 60vh;
+    }
+    .services-items {
+        width: 100%;
+    }
+
+
+    .services-item__text {
+        width: 100%;
+    }
+    .services-item__pic::before {
+        font-size: 30px;
+
+    }
+}
+    
+@media screen and (max-width:320px) {
+    .our-services {
+        height: 50vh;
+    }
+    .services-title {
+        font-size: 24px;
+    }
+
+    .services-item__pic::before {
+        font-size: 20px;
+
+    }
+    .services-item {
+        height: 60px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .services-item__pic {
+        width: 60px;
+        height: 100%;
+        margin: 0;
+    }
 }

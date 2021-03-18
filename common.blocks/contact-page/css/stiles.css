@@ -13,7 +13,7 @@
 */
 
 .contact {
-    height: 92vh;
+/*     height: 92vh; */
     background-image: url(../img/background.webp) ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,8 +23,13 @@
 
 }
 .contact__wrapper {
-    width: 1170px;
-    margin: 0 auto;
+    /* width: 1170px; 16-03-2021*/
+    /* margin: 0 auto; */
+}
+
+.contact__inner {
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .contact__title {
@@ -32,9 +37,9 @@
     font-family: 'Raleway', sans-serif;
     font-size: 90px;
     font-weight: 700;
-    line-height: 25px;
+    /* line-height: 25px; */
     text-align: center;
-    margin-bottom: 58px;
+    margin-bottom: 20px;
 }
 
 .contact__subtitle {
@@ -43,30 +48,32 @@
     font-weight: 300;
     text-align: center;
     line-height: 25px;
-    width: 350px;
+    max-width: 350px;
     margin: 0 auto;
-    margin-bottom: 46px;
+    margin-bottom: 20px;
 }
 
-.contact__inner {
+.contact__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: space-around;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
 }
-
+.contact__form {
+    flex-basis: 40%;
+}
 .form {
     font-family: 'Raleway', sans-serif;
 }
 
 .form__input, .form__textarea {
-    width: 500px;
+    width: 100%;
     background-color: #00c4c4;
     border: none;
     border-left: rgba(0, 0, 0, 0.0) 5px solid;
@@ -119,8 +126,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.address-block {
+    flex-basis: 40%;
+}
+
 .address-block__group {
-    width: 500px;
+    /* width: 500px; */
 }
 
 .address-block__dt {
@@ -137,4 +148,49 @@
     line-height: 25px;
     text-align: left;
     margin-bottom: 16px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .contact__title {
+        font-size: 60px;
+    }
+
+}
+    
+@media screen and (max-width:1024px) {
+    .contact__title {
+        font-size: 40px;
+    }
+
+    .contact__subtitle {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+    
+@media screen and (max-width:768px) {
+    .contact__wrap {
+        flex-direction: column-reverse;
+    }
+    
+    .form__textarea {
+        height: 180px;
+    }
+    
+    .address-block__dt {
+        font-size: 14px;
+    }
+
+    .address-block__dd {
+        color: #262626;
+        font-size: 16px;
+    }
+}
+    
+@media screen and (max-width:320px) {
+    .contact__title {
+        font-size: 24px;
+    }
 }

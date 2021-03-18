@@ -7,25 +7,35 @@
 
 .gallary {
     background-color: #FFE92F;
-    height: 1600px;
+    height: 1500px;
     font-family: 'Raleway', sans-serif;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding-top: 170px;
-}
+box-sizing: border-box;
+    padding-top: 50px;
 
-.page__title {
-    margin: auto;
-    margin-bottom: 28px;
-}
-
-.page__subtitle {
-    margin: auto;
-    margin-bottom: 45px;
 }
 
 .gallary__inner {
-    margin-bottom: 48px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.page__title {
+/*     margin: auto; */
+    box-sizing: border-box;
+    margin: auto;
+    /* margin-bottom: 28px; */
+}
+
+.page__subtitle {
+    box-sizing: border-box;
+    margin: auto;
+    /* margin-bottom: 45px; */
+}
+
+.gallary__inner {
+   /*  margin-bottom: 48px; */
 }
 
 .gallary-row-1 , .gallary-row-2 {
@@ -114,7 +124,7 @@
             flex-grow: 5;
 }
 
-.button__link--gray {
+/* .button__link--gray {
     display: block;
     height: 100%;
     color: #ffffff;
@@ -124,4 +134,117 @@
     background-color: #5585A2;
 width: 200px;
 margin: auto;
+text-align: center;
+} */
+
+.gallery__btn {
+    margin: auto;
 }
+
+.gallery__btn--gray {
+    background-color: #5585A2;
+}
+
+@media screen and (max-width:1200px) {
+    .gallary {
+        padding-top: 0px;
+        height: 160vh;
+    }
+    .page__title {
+        font-size: 60px;
+    } 
+    
+}
+    
+@media screen and (max-width:1024px) {
+    .gallary {
+        height: 130vh;
+    }
+    .page__title {
+        font-size: 40px;
+    } 
+    .page__subtitle {
+        font-size: 14px;
+    }
+    
+    .gallary-row-1 {
+        height: 450px;
+        margin-bottom: 28px;
+    }
+    
+    .gallary-row-2 {
+        height: 300px;
+    }
+    .button__link {
+        font-size: 16px;
+    }
+    
+}
+    
+@media screen and (max-width:768px) {
+    .gallary {
+        padding-top: 0px;
+        height: 110vh;
+    }
+    .gallary-row-1 {
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .pic-1 {
+        margin-right: 20px;
+    }
+    .pic-2 {
+        margin-bottom: 20px;
+    }
+
+    .pic-4 {
+        margin-right: 20px;
+    }
+    
+    .gallary-row-2 {
+        height: 200px;
+    }
+
+}
+    
+@media screen and (max-width:320px) {
+    .gallary {
+        height: 80vh;
+    }
+
+    .page__title {
+        font-size: 24px;
+    } 
+    .page__subtitle {
+        font-size: 12px;
+    }
+    .button__link {
+        font-size: 14px;
+        width: 130px;
+        height: 40px;
+    }
+    .gallary-row-1 {
+        height: 250px;
+        margin-bottom: 10px;
+    }
+
+    .pic-1 {
+        margin-right: 10px;
+    }
+    .pic-2 {
+        margin-bottom: 10px;
+    }
+
+    .pic-4 {
+        margin-right: 10px;
+    }
+
+    .gallary-row-2 {
+        height: 100px;
+    }
+    }
+}
+
+
+

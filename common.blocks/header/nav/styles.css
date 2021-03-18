@@ -31,3 +31,28 @@ a {
     color: #000000;
     text-decoration: none;
 }
+
+@media screen and (max-width:1200px) {
+.nav {
+    width: max-content;
+}
+     
+}
+
+@media screen and (max-width:1024px) {
+    .nav__item {
+        margin-left: 1.4em;
+    }    
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        display: none;
+    }
+     
+}
+
+@media screen and (max-width:320px) {
+
+     
+}
