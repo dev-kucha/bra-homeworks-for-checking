@@ -10,7 +10,7 @@
 </head>
 
 <body class="page">
-    <header class="header">
+    <header class="header" id="home">
         <div class="wrapper">
             <svg class="header__site-icon">
                 <use xlink:href="./img/logo.svg#logo"></use>
@@ -24,14 +24,20 @@
                 development,<br>
                 design and product management.
             </div>
-            <img class="scroll-icon" src="./img/scroll-icon.svg" alt="scroll">
+            <a class="link" href="#about"><img class="scroll-icon" src="./img/scroll-icon.svg" alt="scroll"></a>
         </div>
     </header>
     <main class="main">
-        <section class="section about-us">
-            <h2 class="section__title about-section__title"><span class="section__title-content">ABOUT US</span></h2>
+        <section class="section about-us" id="about">
             <div class="section__content about-as__content">
-
+                <div class="section__topborder">
+                    <div class="topborder topborder__left">
+                    </div>
+                    <h2 class="section__title about-section__title"><span class="section__title-content">ABOUT US</span>
+                    </h2>
+                    <div class="topborder topborder__right">
+                    </div>
+                </div>
                 <p class="section__text">When you work with us, you are part of a team of committed collaborators.
                     All aspects of our software development process are integrated, iterative and agile.
                 </p>
@@ -45,10 +51,15 @@
             </div>
         </section>
         <section class="section services">
-            <h2 class="section__title section__title--white services__title"><span
-                    class="section__title-content">SERVICES</span></h2>
             <div class="section__content section__content--white services__content">
-
+                <div class="section__topborder">
+                    <div class="topborder topborder--white topborder__left">
+                    </div>
+                    <h2 class="section__title section__title--white services__title"><span
+                            class="section__title-content">SERVICES</span></h2>
+                    <div class="topborder topborder--white topborder__right">
+                    </div>
+                </div>
                 <p class="section__text section__text--white">Before we sign a contract or write a line of code our team
                     will spend the
                     necessary time needed to
@@ -60,12 +71,17 @@
             </div>
         </section>
         <section class="section what-we-do">
-            <h2 class="section__title what-we-do__title"><span class="section__title-content">what we do</span></h2>
             <div class="section__content what-we-do__content">
-
+                <div class="section__topborder">
+                    <div class="topborder topborder__left">
+                    </div>
+                    <h2 class="section__title what-we-do__title"><span class="section__title-content">what we do</span>
+                    </h2>
+                    <div class="topborder topborder__right">
+                    </div>
+                </div>
                 <article class="article design">
                     <div class="article__icon design__icon">
-
                     </div>
                     <h3 class="article__title design__title">
                         DESIGN
@@ -75,12 +91,10 @@
                         interaction and visual design and user experience testing.
                         Throughout your project, our designers create and implement visual designs and workflows,
                         solicit user feedback, and work with you to make sure what gets built is what is needed.
-
                     </div>
                 </article>
                 <article class="what-we-do__article">
                     <div class="article__icon development__icon">
-
                     </div>
                     <h3 class="article__title development__title">
                         Development
@@ -89,22 +103,18 @@
                         All engineers are fluent in the latest enterprise, mobile and web development technologies.
                         They collaborate with your team to write, test, and improve code on a daily basis, using proven
                         practices such as test-driven development and pair programing.
-
                     </div>
                 </article>
                 <article class="what-we-do__article">
                     <div class="article__icon prod-man__icon">
-
                     </div>
                     <h3 class="article__title prod-man__title">
                         Product Management
-
                     </h3>
                     <div class="article__text prod-man__text">
                         Planning and development is iterative. Because we are constantly coding and testing, the
                         products we build are always ready to go live. This iterative process allows for changes as
                         business requirements evolve.
-
                     </div>
                 </article>
             </div>
@@ -133,9 +143,15 @@
             </div>
         </section>
         <section class="section contact-us">
-            <h2 class="section__title contact-us__title"><span class="section__title-content">CONTACT us</span></h2>
             <div class="section__content contact-us__content">
-
+                <div class="section__topborder">
+                    <div class="topborder topborder__left">
+                    </div>
+                    <h2 class="section__title contact-us__title"><span class="section__title-content">CONTACT us</span>
+                    </h2>
+                    <div class="topborder topborder__right">
+                    </div>
+                </div>
                 <p class="section__text">Planning and development is iterative. Because we are constantly coding and
                     testing, the products we
                     build are always ready to go live. This iterative process allows for changes as business
@@ -143,13 +159,12 @@
                 </p>
                 <button class="btn-submit" type="submit">CONTACT us</button>
             </div>
-
         </section>
     </main>
     <footer class="footer">
-        <svg class="footer__site-icon">
-            <use xlink:href="./img/logo.svg#logo"></use>
-        </svg>
+        <a class="link" href="#home"><svg class="footer__site-icon">
+                <use xlink:href="./img/logo.svg#logo"></use>
+            </svg></a>
         <span class="footer__copyrite"> © 2014. All Rights Reserved Ellipsis.com</span>
     </footer>
 </body>
