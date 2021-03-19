@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 .wrapper {
     max-width: 1170px;
     height: 100%;
@@ -15,5 +16,4 @@
    .wrapper {
         width: 90vw;
    }
-    
 }

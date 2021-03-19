@@ -7,7 +7,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
-
 .nav__item {
     display: inline-block;
     list-style-type: none;
@@ -33,10 +32,11 @@ a {
 }
 
 @media screen and (max-width:1200px) {
-.nav {
-    width: max-content;
-}
-     
+    .nav {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -49,10 +49,5 @@ a {
     .nav {
         display: none;
     }
-     
-}
-
-@media screen and (max-width:320px) {
-
      
 }

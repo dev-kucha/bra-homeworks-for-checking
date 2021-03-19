@@ -5,15 +5,7 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .contact {
-/*     height: 92vh; */
     background-image: url(../img/background.webp) ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,14 +14,14 @@
     padding-top: 200px;
 
 }
-.contact__wrapper {
-    /* width: 1170px; 16-03-2021*/
-    /* margin: 0 auto; */
-}
 
 .contact__inner {
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .contact__title {
@@ -37,7 +29,6 @@
     font-family: 'Raleway', sans-serif;
     font-size: 90px;
     font-weight: 700;
-    /* line-height: 25px; */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -65,9 +56,12 @@
             align-items: flex-start;
     width: 100%;
 }
+
 .contact__form {
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
 }
+
 .form {
     font-family: 'Raleway', sans-serif;
 }
@@ -127,11 +121,8 @@
 }
 
 .address-block {
-    flex-basis: 40%;
-}
-
-.address-block__group {
-    /* width: 500px; */
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
 }
 
 .address-block__dt {
@@ -152,6 +143,10 @@
 
 
 @media screen and (max-width:1200px) {
+    .contact {
+        padding-top: 100px;
+    }
+
     .contact__title {
         font-size: 60px;
     }
@@ -171,8 +166,15 @@
 }
     
 @media screen and (max-width:768px) {
+    .contact {
+        padding-top: 80px;
+    }
+
     .contact__wrap {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     
     .form__textarea {
@@ -190,6 +192,10 @@
 }
     
 @media screen and (max-width:320px) {
+    .contact {
+        padding-top: 50px;
+    }
+
     .contact__title {
         font-size: 24px;
     }

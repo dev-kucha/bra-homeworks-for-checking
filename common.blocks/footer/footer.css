@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .footer {
     height: 90px;
     background-color: #262626;
@@ -40,16 +33,6 @@
     font-weight: 700;
 }
 
-
-@media screen and (max-width:1200px) {
-
-
-}
-    
-@media screen and (max-width:1024px) {
-
-}
-    
 @media screen and (max-width:768px) {
     .footer {
         height: 100px;
@@ -57,15 +40,15 @@
     }
     
     .footer__inner {
-    flex-direction: column;
-    justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .footer__logo {
         font-size: 20px;
     }
-}
-    
-@media screen and (max-width:320px) {
-
 }

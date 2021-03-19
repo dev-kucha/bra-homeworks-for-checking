@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 @import './common.blocks/wrapper/styles.css';
 @import './common.blocks/inner/styles.css';
 @import './common.blocks/header/styles.css';
@@ -36,5 +37,4 @@ body {
 
 main {
     width: 100%;
-    padding: auto;
 }

@@ -10,6 +10,5 @@
     display: -ms-flexbox;
     display: flex;
     height: 100%;
-    width: 100%; /* 16-03-2021 */
-    /* text-align: left; 16-03-2021*/
+    width: 100%;
 }
