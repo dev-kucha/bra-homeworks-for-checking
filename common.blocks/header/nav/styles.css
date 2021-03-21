@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
 .nav__burger-label {
@@ -17,9 +18,9 @@
 }
 
 .nav__burger-input:checked ~ .nav {
-    -webkit-transform: translateX(-1000px);
-        -ms-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    -webkit-transform: translateY(110vh);
+        -ms-transform: translateY(110vh);
+            transform: translateY(110vh);
     -webkit-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
@@ -107,9 +108,7 @@
 
 @media screen and (max-width:1200px) {
     .nav {
-        width: -webkit-max-content;
-        width: -moz-max-content;
-        width: max-content;
+
     }
 }
 
@@ -127,16 +126,19 @@
     .nav {
         position: absolute;
         z-index: 2;
-        right: -1000px;
-        top: 10vh;
-        background-color: rgba(255, 255, 255, .95);
+        top: -100vh;
+        left:0;
+        background-color: #ffffff;
         overflow: auto;
+        width: 100vw;
+        height: 90vh;
     }
 
     .nav__item {
         display: block;
         font-size: 20px;
         margin-left: 0;
+        text-align: center;
     }
 
     .link {
