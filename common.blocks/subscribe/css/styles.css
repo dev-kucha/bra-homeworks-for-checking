@@ -141,17 +141,3 @@
 
 }
     
-@media screen and (max-width:320px) {
-    .subscribe-page__title {
-        font-size: 24px;
-    }
-    .subscribe-page-input {
-        height: 40px;
-    
-    }
-    .subscribe-page-submit {
-        font-size: 14px;
-        width: 130px;
-        height: 40px;
-    }
-}
