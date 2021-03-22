@@ -163,7 +163,6 @@
 
 .post__data-month {
     font-size: 21px;
-    font-weight: 400;
     -webkit-transform: translateY(-4px);
         -ms-transform: translateY(-4px);
             transform: translateY(-4px);
@@ -220,9 +219,7 @@
     .post-2 {
         display: none;
     }
-}
-    
-@media screen and (max-width:320px) {
+
     .page__subtitle {
         max-width: 90%;
         font-size: 12px;

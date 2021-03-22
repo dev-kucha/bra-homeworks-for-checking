@@ -155,29 +155,3 @@
         font-size: 30px;
     }
 }
-    
-@media screen and (max-width:320px) {
-    .our-services {
-        height: 50vh;
-    }
-
-    .services-title {
-        font-size: 24px;
-    }
-
-    .services-item__pic::before {
-        font-size: 20px;
-    }
-
-    .services-item {
-        height: 60px;
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-    
-    .services-item__pic {
-        width: 60px;
-        height: 100%;
-        margin: 0;
-    }
-}
