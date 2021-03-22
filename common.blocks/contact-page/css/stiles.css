@@ -150,7 +150,6 @@
     .contact__title {
         font-size: 60px;
     }
-
 }
     
 @media screen and (max-width:1024px) {
@@ -188,15 +187,5 @@
     .address-block__dd {
         color: #262626;
         font-size: 16px;
-    }
-}
-    
-@media screen and (max-width:320px) {
-    .contact {
-        padding-top: 50px;
-    }
-
-    .contact__title {
-        font-size: 24px;
     }
 }

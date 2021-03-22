@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-.gallary {
+.gallery {
     background-color: #FFE92F;
     height: 1500px;
     font-family: 'Raleway', sans-serif;
@@ -15,7 +15,7 @@
 
 }
 
-.gallary__inner {
+.gallery__inner {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-box-orient: vertical;
@@ -38,7 +38,7 @@
     margin: auto;
 }
 
-.gallary-row-1 , .gallary-row-2 {
+.gallery-row-1 , .gallery-row-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -47,12 +47,12 @@
             justify-content: space-between;
 }
 
-.gallary-row-1 {
+.gallery-row-1 {
     height: 550px;
     margin-bottom: 28px;
 }
 
-.gallary-row-2 {
+.gallery-row-2 {
     height: 400px;
 }
 
@@ -133,7 +133,7 @@
 }
 
 @media screen and (max-width:1200px) {
-    .gallary {
+    .gallery {
         padding-top: 0px;
         height: 160vh;
     }
@@ -145,7 +145,7 @@
 }
     
 @media screen and (max-width:1024px) {
-    .gallary {
+    .gallery {
         height: 130vh;
     }
 
@@ -157,12 +157,12 @@
         font-size: 14px;
     }
     
-    .gallary-row-1 {
+    .gallery-row-1 {
         height: 450px;
         margin-bottom: 28px;
     }
     
-    .gallary-row-2 {
+    .gallery-row-2 {
         height: 300px;
     }
 
@@ -172,12 +172,12 @@
 }
     
 @media screen and (max-width:768px) {
-    .gallary {
+    .gallery {
         padding-top: 0px;
         height: 110vh;
     }
 
-    .gallary-row-1 {
+    .gallery-row-1 {
         height: 350px;
         margin-bottom: 20px;
     }
@@ -194,48 +194,8 @@
         margin-right: 20px;
     }
     
-    .gallary-row-2 {
+    .gallery-row-2 {
         height: 200px;
     }
 }
-    
-@media screen and (max-width:320px) {
-    .gallary {
-        height: 80vh;
-    }
-
-    .page__title {
-        font-size: 24px;
-    }
-
-    .page__subtitle {
-        font-size: 12px;
-    }
-
-    .button__link {
-        font-size: 14px;
-        width: 130px;
-        height: 40px;
-    }
-
-    .gallary-row-1 {
-        height: 250px;
-        margin-bottom: 10px;
-    }
-
-    .pic-1 {
-        margin-right: 10px;
-    }
-
-    .pic-2 {
-        margin-bottom: 10px;
-    }
-
-    .pic-4 {
-        margin-right: 10px;
-    }
-
-    .gallary-row-2 {
-        height: 100px;
-    }
-}
+   
