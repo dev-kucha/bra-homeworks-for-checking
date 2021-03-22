@@ -120,30 +120,3 @@
             rgba(255, 255, 255, 0.8), transparent), url(./img.webp);
     }
 }
-    
-@media screen and (max-width:320px) {
-    .get {
-        height: 50vh;
-    }
-
-    .desc {
-        width: 100%;
-        text-align: center; 
-    }
-
-    .desc__title {
-        font-size: 24px;
-        text-align: center;
-    } 
-
-    .desc__content {
-        font-size: 12px;
-        text-align: center;
-    }
-    
-    .btn {
-        font-size: 14px;
-        width: 130px;
-        height: 40px;
-    }
-}
