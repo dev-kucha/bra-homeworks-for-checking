@@ -7,11 +7,10 @@
 
 .gallery {
     background-color: #FFE92F;
-    height: 1500px;
     font-family: 'Raleway', sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding-top: 50px;
+    padding-top: 80px;
 
 }
 
@@ -29,13 +28,13 @@
 .page__title {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin: auto;
+    margin: 0 auto 60px;
 }
 
 .page__subtitle {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin: auto;
+    margin: 0 auto 40px;
 }
 
 .gallery-row-1 , .gallery-row-2 {
@@ -54,6 +53,7 @@
 
 .gallery-row-2 {
     height: 400px;
+    margin-bottom: 60px;
 }
 
 .pic-1 , .pic-2 , .pic-3 , .pic-4 , .pic-5 {
@@ -125,8 +125,9 @@
 }
 
 .gallery__btn {
-    margin: auto;
+    margin: 0 auto 60px;
 }
+    
 
 .gallery__btn--gray {
     background-color: #5585A2;
@@ -134,21 +135,17 @@
 
 @media screen and (max-width:1200px) {
     .gallery {
-        padding-top: 0px;
-        height: 160vh;
+        padding-top: 60px;
     }
 
     .page__title {
         font-size: 60px;
+        margin-bottom: 40px;
     } 
     
 }
     
 @media screen and (max-width:1024px) {
-    .gallery {
-        height: 130vh;
-    }
-
     .page__title {
         font-size: 40px;
     }
@@ -173,8 +170,7 @@
     
 @media screen and (max-width:768px) {
     .gallery {
-        padding-top: 0px;
-        height: 110vh;
+        padding-top: 40px;
     }
 
     .gallery-row-1 {
@@ -196,6 +192,7 @@
     
     .gallery-row-2 {
         height: 200px;
+        margin-bottom: 40px;
     }
 }
    

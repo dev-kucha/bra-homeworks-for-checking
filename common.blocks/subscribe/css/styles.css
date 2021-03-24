@@ -7,11 +7,11 @@
 
 
 .subscribe {
-    height: 573px;
     background-image: url('../img/bg-subscribe.png ');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    padding: 100px 0;
 }
 
 .subscribe-page__inner {
@@ -27,6 +27,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
 }
+
 .subscribe-page__title {
     color: #262626;
     font-family: Raleway;
@@ -40,7 +41,7 @@
     font-family: Raleway;
     font-size: 17px;
     width: 570px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .subscribe-page-input {
@@ -66,7 +67,6 @@
 
 @media screen and (max-width:1200px) {
     .subscribe {
-        height: 50vh;
         background-image:-webkit-gradient(
             linear, left top, left bottom, from(rgba(255,255,255, 0.8)), to(transparent)), url('../img/bg-subscribe.png ');
         background-image:-o-linear-gradient(
@@ -82,8 +82,7 @@
     
 @media screen and (max-width:1024px) {
     .subscribe {
-        padding: 30px 0;
-        height: 40vh;
+        padding: 80px 0;
     }
 
     .subscribe-page__inner {
@@ -99,7 +98,7 @@
     .subscribe-page__subtitle {
         font-size: 14px;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .subscribe-page__form-subtitle {
@@ -123,6 +122,7 @@
         width: 100%;
         margin-right: 0;
         font-size: 14px;
+        margin-bottom: 40px;
     }
 
     .subscribe-page-submit {
@@ -131,13 +131,20 @@
 }
     
 @media screen and (max-width:768px) {
+    .subscribe {
+        padding: 60px 0;
+    }
+
     .subscribe-page__subtitle {
         width: 90%;
     }
+
     .subscribe-page__form-subtitle {
         width: 90%;
         height: 200px;
     }
-
+    .subscribe-page-input {
+        margin-bottom: 20px;
+    }
 }
   

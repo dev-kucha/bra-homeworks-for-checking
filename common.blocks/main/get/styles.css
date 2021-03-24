@@ -10,11 +10,12 @@
 
 .get {
     height: 100vh;
-    background-image: url(./img.webp);
+    background-image: url(./img-cut.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover ;
     text-align: center;
+padding: 120px 0 80px;
 }
 
 .get__inner {
@@ -79,10 +80,6 @@
 }
 
 @media screen and (max-width:1024px) {
-    .get {
-        height: 70vh;
-    }
-
     .scroll-control {
         visibility: hidden;
     }
@@ -111,12 +108,12 @@
             linear,
             left top, left bottom,
             from(transparent),
-            color-stop(rgba(255, 255, 255, 0.8)), to(transparent)), url(./img.webp);
+            color-stop(rgba(255, 255, 255, 0.8)), to(transparent)), url(./img-cut.webp);
         background-image:  -o-linear-gradient(
             transparent,
-            rgba(255, 255, 255, 0.8), transparent), url(./img.webp);
+            rgba(255, 255, 255, 0.8), transparent), url(./img-cut.webp);
         background-image:  linear-gradient(
             transparent,
-            rgba(255, 255, 255, 0.8), transparent), url(./img.webp);
+            rgba(255, 255, 255, 0.8), transparent), url(./img-cut.webp);
     }
 }

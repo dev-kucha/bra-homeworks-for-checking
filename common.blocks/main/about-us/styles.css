@@ -12,6 +12,7 @@
     background-image: url(./img.webp), radial-gradient(circle 1125px at center, rgba(0, 196, 196, 0.9) 0%, rgba(0, 183, 183, 0.9) 32%, rgba(0, 173, 173, 0.9) 68%, rgba(0, 156, 156, 0.9) 100%);
     background-repeat: no-repeat;
     background-position: 5% 50%;
+    padding: 80px 0;
 }
 
 .about-us__inner {
@@ -44,7 +45,6 @@
 
 @media screen and (max-width:1200px) {
     .about-us {
-        height: 90vh;
         background-image:  -webkit-gradient(
             linear,
             left top, left bottom,
@@ -61,7 +61,7 @@
     
 @media screen and (max-width:1024px) {
     .about-us {
-        height: 80vh;
+        height: auto;
     }
 
     .about-us__title {
@@ -86,9 +86,5 @@
 
      .about-us__content {
         text-align: center;
-    }
-
-    .about-us {
-        height: 50vh;
     }
 }
