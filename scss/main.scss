@@ -1,0 +1,212 @@
+@use "./_null";
+@use "./_fonts.scss";
+
+// variables
+$primery-color: #ffcc00;
+$secondary-color: #666666;
+$main-font: 'Roboto', sans-serif;
+$added-font: 'Raleway', sans-serif;
+$support-font: 'Open Sans', sans-serif;
+
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    
+    &__header {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &-separator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            .line {
+                height: 2px;
+                background-color: $primery-color;
+                width: 211px;
+            }
+            ion-icon {
+                font-size: 20px;
+                color: $primery-color;
+                margin: 0 6px;
+            }
+        }
+   
+    }
+
+    &__subtitle {
+        font-family: $added-font;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #898F8F;
+    }
+    &__title {
+        font-family: $main-font;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: $primery-color;
+        margin-bottom: 45px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        flex-direction: column;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 39px;
+        &::before {
+            content: "<";
+            color: $primery-color;
+            font-family: $added-font ;
+            font-size: 30px;
+            margin-right: 40px;
+            cursor: pointer;
+        }
+        &::after {
+            content: ">";
+            color: $primery-color;
+            font-family: $added-font ;
+            font-size: 30px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+    }
+
+    &__left-side {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+            &-corner {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+
+                &--topleft {
+                    top: 0;
+                    left: 0;
+                    border-top: $primery-color 2px solid;
+                    border-left: $primery-color 2px solid;
+                }
+                &--topright {
+                    top: 0;
+                    right: 0;
+                    border-top: $primery-color 2px solid;
+                    border-right: $primery-color 2px solid;
+                }
+                &--bottomleft {
+                    bottom: 0;
+                    left: 0;
+                    border-bottom: $primery-color 2px solid;
+                    border-left: $primery-color 2px solid;
+                }
+                &--bottomright {
+                    bottom: 0;
+                    right: 0;
+                    border-bottom: $primery-color 2px solid;
+                    border-right: $primery-color 2px solid;
+                }
+                    }
+            
+    }
+    &__center-line {
+        margin: 0 80px;
+        width: 2px;
+        height: 561px;
+        background-color: $primery-color;
+/*         &__line {
+
+        } */
+    }
+    &__right-side {
+        width: 400px;
+        height: 400px;
+            display: flex;
+            flex-direction: column ;
+            justify-content: center;
+            align-items: center;
+        &-name {
+            font-family: $main-font;
+            font-size: 36px;
+            color: $secondary-color;
+            margin-bottom: 33px;
+        }
+        &-position {
+            font-family: $added-font;
+            font-size: 24px;
+            color: $secondary-color;
+            margin-bottom: 27px;
+        }
+        &-social {
+
+        }
+        &-description {
+            width: 80%;
+            font-family: $added-font;
+            font-size: 14px;
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        &-separator-2 {
+
+        }
+        &-btn {
+
+        }
+    }
+    &__pagination {
+        width: 54px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            height: 13px;
+            width: 13px;
+            border: 2px solid rgba(0,0,0,0);
+            border-radius: 50%;
+            background-color: $primery-color;
+            cursor: pointer;
+            
+            &--active {
+                background-color: rgba(0,0,0,0);
+                border-color: $primery-color;
+                cursor: unset;
+            }
+        }
+    }
+}
+
+.item-2__photo {
+/*     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    margin: auto auto;
+    width: 388px;
+    height: 388px;
+    background-image: url(../img/photo.png);
+    border: $primery-color 2px solid;
+}
