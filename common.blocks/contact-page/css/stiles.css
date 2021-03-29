@@ -6,7 +6,7 @@
 */
 
 .contact {
-    background-image: url(../img/background.webp) ;
+    background-image: url(../img/background.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -89,6 +89,8 @@
 .form__textarea {
     height: 220px;
     padding-top: 20px;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
 }
 
 .form__input:focus, .form__textarea:focus {
