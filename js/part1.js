@@ -2,9 +2,7 @@
 
 let age = prompt(`Скільки вам років?`);
 
-console.log(`значення - ` + age + ` тип - ` + (typeof age));
-
-if (age === `` || age < 0 || age == NaN) {
+if (age === `` || age <= 0 || isNaN(age)) {
     alert(`Ви впевнені? Зазвичай, так не буває!`);
 } else if (age <= 12) {
     alert(`Вам ${age} років. Ви ще дитина.`)
