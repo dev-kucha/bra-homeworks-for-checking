@@ -11,3 +11,4 @@ if ($year === `` || isNaN($year)) {
     alert(`${$year} рік не є високосним`);
     console.log(`${$year} рік не є високосним`);
 }
+
