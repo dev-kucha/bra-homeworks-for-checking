@@ -28,6 +28,9 @@ while ($do) {
             case 6:
                 $dayOfWeek = `Субота`;
                 break;
+            default:
+                $dayOfWeek = `Помилка!`;
+                break;
         }
         $do = confirm(`
         ** "${$dayOfWeek}" **

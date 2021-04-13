@@ -21,18 +21,18 @@ if ($startNumber === `` || isNaN($startNumber)) {
 
 // розрахунок
 
-let $sum = 0;
+let $sum = $startNumber;
 
 if ($startNumber < $endNumber) {
-    for (let i = $startNumber; i <= $endNumber; i++) {
-        $sum++;
+    for (let i = $startNumber + 1; i <= $endNumber; i++) {
+        $sum = $sum + i;
     }
 } else if ($startNumber > $endNumber) {
-    for (let i = $startNumber; i >= $endNumber; i--) {
-        $sum++;
+    for (let i = $startNumber - 1; i >= $endNumber; i--) {
+        $sum = $sum + i;
     }
 } else {
-    $sum = 1;
+    $sum = $startNumber;
 }
 
 
