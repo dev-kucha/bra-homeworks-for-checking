@@ -14,7 +14,7 @@ function checkPerfectNumber(x) {
     return (x == sum);
 }
 
-function getPerfectNubdersOfRange(a, b) {
+function getPerfectNumbersOfRange(a, b) {
     a = Number(a);
     b = Number(b);
     if (b > 1) {
@@ -32,7 +32,7 @@ function getPerfectNubdersOfRange(a, b) {
     }
 }
 
-getPerfectNubdersOfRange(1, 10000);
-getPerfectNubdersOfRange(100, -50);
-getPerfectNubdersOfRange(0, 100);
-getPerfectNubdersOfRange(-50, 10);
+getPerfectNumbersOfRange(1, 10000);
+getPerfectNumbersOfRange(100, -50);
+getPerfectNumbersOfRange(0, 100);
+getPerfectNumbersOfRange(-50, 10);

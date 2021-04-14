@@ -11,7 +11,7 @@ function checkPerfectNumber(x) {
             sum += i;
         }
     }
-    return (x == sum);
+    return x == sum;
 }
 
 console.log(`-6 Досконале число? - `, checkPerfectNumber(-6));
