@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .frame {
+            display: inline-block;
+            position: relative;
+            border: 1px solid black;
+            padding: 4px;
+            width: 50%;
+        }
+
+        .active {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: palegreen;
+            cursor: pointer;
+        }
+
+        .active:hover {
+            background-color: palevioletred;
+        }
+    </style>
+    <title>Lesson 29 - Part 3</title>
+</head>
+
+<body>
+    <h1>Part 3</h1>
+    <p>Создать HTML-страницу с блоком текста в рамочке. Реализовать возможность изменять размер блока, если зажать мышку
+        в правом нижнем углу и тянуть ее дальше.
+    </p>
+    <div class="frame">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloribus esse repellat quam nam, obcaecati
+        consectetur, temporibus consequuntur repellendus tenetur dolor vero, minus eos quidem animi iste facere
+        explicabo nesciunt.
+        <div class="active"></div>
+    </div>
+    <script src="../../js/lesson-29/part3.js"></script>
+</body>
+
+</html>
