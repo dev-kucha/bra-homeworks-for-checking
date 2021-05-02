@@ -3,10 +3,10 @@
 let frame = document.querySelector(`.frame`);
 let activeZone = frame.lastElementChild;
 
-activeZone.onmousedown = function (event) {
+activeZone.onpointerdown = function (event) {
     event.preventDefault();
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
+    document.addEventListener('pointermove', onMouseMove);
+    document.addEventListener('pointerup', onMouseUp);
 
     mouseStartPositionX = event.pageX;
     mouseStartPositionY = event.pageY;
@@ -16,8 +16,8 @@ activeZone.onmousedown = function (event) {
         frame.style.height = ((mouseStartPositionY - frame.offsetTop) + (event.pageY - mouseStartPositionY)) + 'px';
     }
     function onMouseUp() {
-        document.removeEventListener('mouseup', onMouseUp);
-        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('pointerup', onMouseUp);
+        document.removeEventListener('pointermove', onMouseMove);
     }
 
 }
