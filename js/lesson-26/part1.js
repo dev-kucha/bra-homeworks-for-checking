@@ -12,6 +12,7 @@ const vehicle = {
                 console.log(`${key} : ${this[key]}`)
             }
         }
+        console.table(vehicle);
     },
 
     getTimeToTripWithoutRest(dist) {
